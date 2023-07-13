@@ -53,30 +53,15 @@ return peter
     // deletePrice({ item: "Kobo Libra 2" }) // should return { item: "Kobo Libra 2", priceless: true }
     
     let objj={item:'', price:0} 
-    function deletePrice(objj) {
+   function deletePrice(objj) {
 
       if ('price' in objj) {
          delete objj.price;}   
          else {
          objj.priceless = true;}
 
-  return objj;
+  return objj
 }
-
-
-  
-     
-        
-
-
-
-
-      
-      
-      
-      
-
-      
 
 
     // 👉 CHALLENGE 4
@@ -86,8 +71,12 @@ return peter
     // evenList(['a']) // should return false
     // evenList(['a', 'b']) // should return true
     function evenList(arr) {
+      
+      return arr.length % 2 === 0;
 
     }
+
+    console.log(evenList(['a', 'f','i', 'u']))
 
     // 👉 CHALLENGE 5
     // 🧠 The function firstOrLast takes an array as the first argument, and a Boolean as the second.
