@@ -119,7 +119,7 @@ return peter
     // 🧠 You can merge the result array back into a string by using join. Example: ["f", "o", "o"].join("") yields "foo"
     // 🧠 Do not forget to return your rejoined string!
     function stripX(string) {
-      let splitter = string.split('x')
+      let splitter = string.split('x',)
       return splitter.join('')
     }
 
@@ -133,9 +133,13 @@ return peter
     // ❗ Important Notes:
     // 🧠 Try to solve this problem without looking at how you solved the previous one.
     // 🧠 If you need to look, do not copy & paste code. Take a peek and then work from memory!
-    function stripChar() {
-
+    function stripChar(string, letter) {
+      let splitter =  string.split(letter)
+      return splitter.join('')
     }
+
+
+    
 
     // 👉 CHALLENGE 9
     // 🧠 The function getProps takes an object as its argument.
