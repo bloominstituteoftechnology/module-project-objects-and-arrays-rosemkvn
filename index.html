@@ -42,7 +42,6 @@ return peter
       
 
       
-  console.log(buildUser("John", "Smith", 30))
 
     // 👉 CHALLENGE 3
     // 🧠 The function deletePrice takes an object as its argument and deletes its "price" property if it exists.
@@ -52,18 +51,33 @@ return peter
     // 🧠 Examples of usage:
     // deletePrice({ item: "Tesla Model 3", price: 40000 }) // should return { item: "Tesla Model 3" }
     // deletePrice({ item: "Kobo Libra 2" }) // should return { item: "Kobo Libra 2", priceless: true }
-    function deletePrice(item, price) {
+    
+    let objj={item:'', price:0} 
+    function deletePrice(objj) {
 
-      let tesla ={item: "Tesla Model 3", price: 40000}
-       delete tesla.price
-       return tesla
+      if ('price' in objj) {
+         delete objj.price;}   
+         else {
+         objj.priceless = true;}
 
-      let kobo= {item: "Kobo Libra 2", priceless: true}
-       delete kobo.price
-       return kobo
+  return objj;
+}
 
 
-    }
+  
+     
+        
+
+
+
+
+      
+      
+      
+      
+
+      
+
 
     // 👉 CHALLENGE 4
     // 🧠 The function evenList takes an array as its argument and returns true if the array has an even number of elements, false otherwise.
